@@ -545,8 +545,16 @@
 // Chapter 12 - 13 
 
 // Question 1 
-// var input = prompt("Enter any number or string")
-
+// var char = prompt("Enter any character")
+// if(char >= "A" && char <= "Z"){
+//     alert("It is an UpperCase Letter")
+// }
+// else if(char >= "a" && char <= "z"){
+//     alert("It is a LowerCase Letter")
+// }
+// else {
+//     alert("It is a number")
+// }
 
 
 // Question 2
@@ -595,15 +603,18 @@
 // Question 5
 // var password = "bmj"
 // var confirm = prompt("Enter your password")
-// if(confirm == 0){
+// if(confirm !== ""){
+//     if(confirm === password){
+//         alert("Correct! The password you entered matches the original password")
+//     }
+//     else {
+//         alert("Incorrect Passwords")
+//     }
+// }
+// else{
 //     alert("Please enter your password")
 // }
-// else if(confirm === password){
-//     alert("Correct! The password you entered matches the original password")
-// }
-// else {
-//     alert("Incorrect Passwords")
-// }
+
 
 
 // Question 6
