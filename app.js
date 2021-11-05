@@ -645,3 +645,249 @@
 // else{
 //     alert("Invalid Input")
 // }
+
+
+// Chapter 13
+
+// Question 01
+// var stdNames = [];
+
+
+// Question 02
+// var stdNames = new Array();
+
+
+// Question 03
+// var strings = ["Yousuf", "Islam", "Rathore"];
+
+
+// Question 04
+// var numbers = [10, 20, 30];
+
+
+// Question 05
+// var booleans = [true, false, true, false];
+
+
+// Question 06
+// var array = ["Yousuf", 20, true];
+
+
+// Question 07
+// var qualities = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"]
+// document.write("Qualifications: <br> <br>");
+// for(var i = 0 ; i < qualities.length ; i++){
+//     document.write( i+1 + ") " + qualities[i] + "<br>");
+// }
+
+
+// Question 08
+// var names = ["Marium", "Yousuf", "Abbas""];
+// var scores = [450, 400, 350];
+// var totalMarks = 500;
+// for(var i = 0 ; i < 3 ; i++){
+//     document.write("Score of " + names[i] + " is " + scores[i] + ".");
+//     document.write(" Percentage: " + (scores[i]/totalMarks*100) + "% <br>");
+// }
+
+
+// Question 09
+// var colors = ["red", "green", "blue"];
+// document.write("Colors Array at Beginning => [" + colors + "]<br><br>");
+// var addS = prompt("Name the color to add in the beginning of array")
+// colors.unshift(addS)
+// document.write("a) Array after adding user color in start => [" + colors + "]<br><br>")
+// var addL = prompt("Name the color to add in the end of array")
+// colors.push(addL)
+// document.write("b) Array after adding user color in last => [" + colors + "]<br><br>")
+// colors.unshift("white", "black");
+// document.write("c) Array after hardcoding 2 colors in start => [" + colors + "]<br><br>")
+// colors.shift();
+// document.write("d) Array after deleting a color from start => [" + colors + "]<br><br>")
+// colors.pop();
+// document.write("e) Array after deleting a color from last => [" + colors + "]<br><br>")
+// var indexNum = +prompt("Enter index where you want to add the new color");
+// var addI = prompt("Name the color to add at previous entered index")
+// colors.splice(indexNum, 0, addI);
+// document.write("f) Array after adding user color at desired index => [" + colors + "]<br><br>")
+// var indexNum = +prompt("Enter index from where you want start delete")
+// var countNum = +prompt("Enter how many values you want to delete from the desired index")
+// colors.splice(indexNum, countNum)
+// document.write("g) Array after deleting color(s) from desired index and count => [" + colors + "]<br><br>")
+
+
+// Question 10
+// var stdScores = [320, 230, 480, 120]
+// document.write("Scores of Students : " + stdScores + "<br>")
+// stdScores.sort()
+// document.write("Ordered Scores of Students : " + stdScores)
+
+
+// // Question 11
+// var cities = ["Karachi", "Lahore", "Islamabad", "Peshawar", "RawalPindi"]
+// var selectedCities = cities.slice(1, 4)
+// document.write("Cities List <br>")
+// document.write(cities + "<br><br>")
+// document.write("Selected Cities List <br>")
+// document.write(selectedCities)
+
+
+// Question 12
+// var arr = ["This", "is", "my", "cat"]
+// document.write("Array: <br>" + arr + "<br> <br>")
+// var string = arr.join(" ")
+// document.write("String: <br>" + string)
+
+
+// Question 13
+// var arrayy = [];
+// arrayy.push("keyboard");
+// arrayy.push("mouse");
+// arrayy.push("printer");
+// arrayy.push("monitor");
+// document.write("Devices: <br>" + arrayy + "<br><br>");
+// for(var i = 0 ; i < 4 ; i++ ){
+//     document.write("Out: <br>" + arrayy.shift() + "<br>")
+// }
+
+
+// Question 14
+// var arrayy = [];
+// arrayy.push("keyboard");
+// arrayy.push("mouse");
+// arrayy.push("printer");
+// arrayy.push("monitor");
+// document.write("Devices: <br>" + arrayy + "<br><br>");
+// for(var i = 0 ; i < 4 ; i++ ){
+//     document.write("Out: <br>" + arrayy.pop() + "<br>")
+// }
+
+
+// Question 15
+// var phones = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"]
+// document.write("Dropdown: <br><br>")
+// for(var i = 0 ; i < phones.length ; i++ ){
+//     document.write("> " + phones[i] + "<br>")
+// }
+
+
+
+
+// Chapter 14
+
+// Question 01
+// var multiDArray = [[], [], [], []]
+
+
+// Question 02
+// var arr1 = [0, 1, 2, 3];
+// var arr2 = [1, 0, 1, 2];
+// var arr3 = [2, 1, 0, 1];
+// var multiDiArr = [arr1, arr2, arr3];
+// for (var j = 0; j < arr1.length; j++) {
+//     document.write(arr1[j])
+// }
+// document.write("<br>")
+// for (var h = 0; h < arr2.length; h++) {
+//     document.write(arr2[h])
+// }
+// document.write("<br>")
+// for (var a = 0; a < arr3.length; a++) {
+//     document.write(arr3[a])
+// }
+
+
+// Question 03
+// for(var i = 1 ; i <= 10 ; i++ ){
+//     document.write(i + "<br>")
+// }
+
+
+// Question 04
+// var table = +prompt("Enter a number to show its multiplication table")
+// var length = +prompt("Enter length multiplication table")
+// document.write("Multiplication table of " + table + "<br>")
+// document.write("Length " + length + "<br><br>")
+// for(var i = 1 ; i <= length ; i++ ){
+//     document.write(table + " x " + i + " = " + table*i + "<br>")
+// }
+
+
+// Question 05
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+// for(var i = 0 ; i < fruits.length ; i++ ){
+//     document.write(fruits[i] + "<br>")
+// }
+// document.write("<br>")
+// for(var j = 0 ; j < fruits.length ; j++){
+//     document.write("Element at index " + j + " is " + fruits[j] + "<br>")
+// }
+
+
+// Question 06
+// document.write("<h3>Counting</h3>")
+// for(var i = 1 ; i <= 15 ; i++ ){
+//     document.write(i + ", ")
+// }
+// document.write("<br> <h3>Reverse Counting</h3>")
+// for(var a = 10 ; a >= 1 ; a--){
+//     document.write(a + ", ")
+// }
+// document.write("<br> <h3>Even</h3>")
+// for(var b = 0 ; b <= 20 ; b = b+2){
+//     document.write(b + ", ")
+// }
+// document.write("<br> <h3>Odd</h3>")
+// for(var c = 1 ; c <= 20 ; c = c+2){
+//     document.write(c + ", ")
+// }
+// document.write("<br> <h3>Series</h3>")
+// for(var j = 2; j <= 20 ; j = j+2){
+//     document.write(j + "k, ")
+// }
+
+
+// Question 07
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+// var userInput = prompt("Enter your bakery item")
+// var flag = false
+// for(var i = 0 ; i < A.length ; i++ ){
+//     if(userInput == A[i]){
+//         document.write(userInput + " is available at index " + i + " in bakery")
+//         flag = true
+//     }
+// }
+// if(flag == false){
+//     document.write("We are sorry. " + userInput + " is not available in our bakery.")
+// }
+
+
+// Question 08
+// var array = [24, 53, 78, 91, 12];
+// var largest= 0;
+// for(var i = 0 ; i <= largest ; i++ ){
+//     if(array[i] > largest){
+//         var largest = array[i];
+//     }
+// }
+// document.write("Array items: " + array + "<br>") ;
+// document.write("The largest number is " + largest);
+
+
+// Question 09 
+// var array = [24, 53, 78, 91, 12];
+// var smallest= 0;
+// for(var i = 5 ; i >= smallest ; i-- ){
+//     if(array[i] < smallest){
+//         var smallest = array[i];
+//     }
+// }
+// document.write("Array items: " + array + "<br>") ;
+// document.write("The smallest number is " + smallest);
+
+
+// Question 10 
+// var num = 5
+// for(var i = 0 ; i <= 20 ; i++ ){
+//     document.write(num * i + ", ")
+// }
