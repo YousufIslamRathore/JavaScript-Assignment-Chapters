@@ -865,7 +865,7 @@
 // Question 08
 // var array = [24, 53, 78, 91, 12];
 // var largest= 0;
-// for(var i = 0 ; i <= largest ; i++ ){
+// for(var i = 0 ; i <= array.length ; i++ ){
 //     if(array[i] > largest){
 //         var largest = array[i];
 //     }
@@ -876,8 +876,8 @@
 
 // Question 09 
 // var array = [24, 53, 78, 91, 12];
-// var smallest= 0;
-// for(var i = 5 ; i >= smallest ; i-- ){
+// var smallest = array[0];
+// for(var i = 0 ; i <= array.length ; i++ ){
 //     if(array[i] < smallest){
 //         var smallest = array[i];
 //     }
@@ -887,7 +887,6 @@
 
 
 // Question 10 
-// var num = 5
-// for(var i = 0 ; i <= 20 ; i++ ){
-//     document.write(num * i + ", ")
+// for(var i = 0 ; i <= 100 ; i = i + 5 ){
+//     document.write(i + ", ")
 // }
