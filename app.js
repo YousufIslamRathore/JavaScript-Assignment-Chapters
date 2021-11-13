@@ -935,18 +935,40 @@
 
 
 // Question 07
+// // 1st Method
 // var city = "Hyderabad"
 // document.write("City: " + city)
 // city = city.replace("Hyder", "Islam")
 // document.write("<br> After Replacement: " + city)
+//
+// // 2nd Method
+// var city = "Hyderabad"
+// document.write("City: " + city)
+// for ( var i = 0 ; i < city.length ; i++ ) {
+//     if (city.slice(i, i+5) === "Hyder") {
+//         city = city.slice(0, i) + "Islam" + city.slice(i+5)
+//         document.write("<br> After Replacement: " + city)
+//     }
+// }
 
 
 // Question 08
+// // 1st Method
 // var message = "Ali and Sami are best friends. They play cricket and football together."
 // document.write("Message: " + message)
 // message = message.replace(/and/g, "&")
 // document.write("<br> After replacing 'and' with '&': " + message)
-
+//
+// // 2nd Method
+// var message = "Ali and Sami are best friends. They play cricket and football together."
+// document.write("Message: " + message)
+// for (var i = 0 ; i < message.length ; i++) {
+//     if (message.slice(i, i+3) === "and") {
+//         message = message.slice(0, i) + "&" + message.slice(i+3) 
+//     }
+// }
+// document.write("<br> After Replacing 'and' with '&': " + message)
+ 
 
 // Question 09
 // var numString = "472"
@@ -966,21 +988,31 @@
 // Question 11
 // var userInput = prompt("Enter Input")
 // document.write("User input: " + userInput)
-// var str1 = userInput.slice(0, 1).toUpperCase()
-// var str2 = userInput.slice(1)
+// var str1 = userInput[0].toUpperCase()
+// var str2 = userInput.slice(1).toLowerCase()
 // var titleCase = str1 + str2
 // document.write("<br> Title case: " + titleCase)
 
 
 // Question 12
+// // 1st Method
 // var num = 35.36
 // document.write("Number: " + num)
 // num = num.toString()
 // num = num.replace(".", "")
 // document.write("<br> String: " + num)
+// 
+// // 2nd Method
+// var num = 35.36
+// document.write("Number: " + num)
+// num = num.toString()
+// var num = num.split(".")
+// var num = num.join("")
+// document.write("<br> Result: " + num)
 
 
 // Question 13
+// // 1st Method
 // var userInput = prompt("Enter your Name")
 // var a = userInput.charCodeAt(userInput.indexOf("!"))
 // var b = userInput.charCodeAt(userInput.indexOf(","))
@@ -989,8 +1021,12 @@
 // if(a == 33 || b == 44 || c == 46 || d == 64){
 //     alert("Please enter a valid username")
 // }
-// else{
-//     alert("aiyeeee")
+// // 2nd Method
+// var userInput = prompt("Enter your Name")
+// for (var i = 0 ; i < userInput.length ; i++) {
+//     if(userInput[i] === "!" || userInput[i] === "," || userInput[i] === "." || userInput[i] === "@") {
+//         alert("Please enter a valid username")
+//     }
 // }
 
 
