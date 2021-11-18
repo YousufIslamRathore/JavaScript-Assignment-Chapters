@@ -1290,3 +1290,121 @@
 // document.write("Net Amount Payable (within Due Date): <b>" + netAmt)
 // document.write("</b> <br> Late payment surcharge: <b>" + latePay)
 // document.write("</b> <br> Gross Amount Payable (after Due Date): <b>" + grossAmt + "</b>")
+
+
+
+// Chapter 35 - 38
+
+// Question 01
+// function currentTime() {
+//     document.write(new Date())
+// }
+// currentTime()
+
+
+// Question 02
+// 1st Method
+// function namee() {
+//     var firstName = prompt("Enter First Name")
+//     var lastName = prompt("Enter Last Name")
+//     var fullName = firstName + " " + lastName
+//     return ("Hello!" + " " + fullName)
+// }
+// document.write(namee())
+//
+// 2nd Method
+// var firstName = prompt("Enter First Name")
+// var lastName = prompt("Enter Last Name")
+// function fullname(str1, str2) {
+//     var fullName = str1 + " " + str2
+//     return fullName
+// }
+// document.write("Hello!" + " " + fullname(firstName, lastName))
+
+
+// Question 03
+// var num1 = +prompt("Enter first number")
+// var num2 = +prompt("Enter second number")
+// function sum() {
+//     var a = num1 + num2
+//     return a
+// }
+// document.write(sum())
+// // 0R
+// function sum(a, b) { 
+//     var add = a + b
+//     return add
+// }
+// document.write(sum(num1, num2))
+
+
+// Question 04
+// var num1 = +prompt("Enter first number")
+// var opt = prompt("Enter Operator")
+// var num2 = +prompt("Enter second number")
+// function calc(num1, opt, num2) {
+//     if (opt.trim() === "+") {
+//         return ("Addition of " + num1 + " and " + num2 + " = " + (num1 + num2))
+//     }
+//     else if (opt.trim() === "-") {
+//         return ("Subtraction of " + num1 + " and " + num2 + " = " +(num1 - num2))
+//     }
+//     else if (opt.trim() === "*") {
+//         return ("Multiplication of " + num1 + " and " + num2 + " = " + (num1 * num2))
+//     }
+//     else if (opt.trim() === "/") {
+//         return ("Division of " + num1 + " and " + num2 + " = " + (num1 / num2))
+//     }
+//     else {
+//         return "Enter Valid Input"
+//     }
+// }
+// var calculate = calc(num1, opt, num2)
+// document.write(calculate)
+
+
+// Question 05
+// function square(a) {
+//     return a**2
+// }
+// var num = +prompt("Enter a nubmer to find its square")
+// var squared = square(num)
+// document.write("Your Number: " + " " + num + "<br>")
+// document.write("Square of your number: " + squared)
+
+
+// Question 06
+// // 1st Method
+// function factorial(n) {
+//     if (n < 0) {
+//         return "Factorial of negative number is not possible"
+//     }
+//     if (n == 0) {
+//         return 1
+//     }
+//     else {
+//         return (n * factorial(n - 1))
+//     }
+// }
+// var num = +prompt("Enter any positive number")
+// var fac = factorial(num)
+// document.write("Factorial of " + num + " is " + fac)
+//
+// // 2nd Method
+// function factorial(num) {
+//     if (num < 0) {
+//         return "Factorial of negative number is not possible"
+//     }
+//     else if (num === 0) {
+//         return 1
+//     }
+//     else {
+//         for (var i = num - 1 ; i >= 1 ; i--) {
+//             num = num * i
+//         }
+//         return num
+//     }
+// }
+// var num = +prompt("Enter any positive integer")
+// var fact = factorial(num)
+// document.write("Factorial of " + num + " is " + fact)
