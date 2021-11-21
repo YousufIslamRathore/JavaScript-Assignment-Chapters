@@ -544,12 +544,24 @@
 
 // Chapter 12 - 13 
 
-// Question 1 
+// Question 1
+// // 1st Method 
 // var char = prompt("Enter any character")
 // if(char >= "A" && char <= "Z"){
 //     alert("It is an UpperCase Letter")
 // }
 // else if(char >= "a" && char <= "z"){
+//     alert("It is a LowerCase Letter")
+// }
+// else {
+//     alert("It is a number")
+// }
+// // 2nd Method
+// var char = prompt("Enter any character")
+// if(char.charCodeAt() >= 65 && char.charCodeAt() <= 90){
+//     alert("It is an UpperCase Letter")
+// }
+// else if(char.charCodeAt() >= 97 && char.charCodeAt() <= 122){
 //     alert("It is a LowerCase Letter")
 // }
 // else {
