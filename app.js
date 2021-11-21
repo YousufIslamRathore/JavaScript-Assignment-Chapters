@@ -1467,22 +1467,24 @@
 //     if ((string.length) % 2 === 0){
 //         count = (string.length) / 2
 //     }
-//     else {
-//         if (string.length === 1) {
-//             document.write("Entered String is a Palindrome")
-//         }
-//         else {
-//             count = (string.length - 1) / 2
-//         }
+//     else if (string.length === 1) {
+//         document.write("Entered String is a Palindrome")
 //     }
+//     else {
+//         count = (string.length - 1) / 2
+//     }
+//     var flag = true
 //     for (var i = 0 ; i < count ; i++) {
 //         if (string[i] != string.slice(-1-i)[0]) {
-//             document.write("Entrered String is not a Palindrome")
-//             return false
+//             flag = false
 //         }
 //     }
+//     if(flag === false) {
+//         document.write("Entrered String is not a Palindrome")
+//     }
+//     else if(flag === true) {
 //     document.write("Entered String is a Palindrome")
-//     return true
+//     }
 // }
 // checkPalindrome(input)
 
@@ -1497,3 +1499,56 @@
 //     }
 // }
 // capitialize(string)
+
+
+// Question 12
+// var string = prompt("Enter any string")
+// function longestWord(string) {
+//     var arr = string.split(" ")
+//     var largest = ""
+//     for (var i = 0 ; i < arr.length ; i++) {
+//         if (arr[i].length > largest.length) {
+//             largest = arr[i]
+//         }
+//         else if (arr[i].length == largest.length) {
+//             largest = largest + ", " + arr[i]
+//         }
+//     }
+//     return largest
+// }
+// var longLength = longestWord(string)
+// document.write("Entered String: " + string + "<br>")
+// document.write("Longest Word(s) in this String: " + longLength)
+
+
+// Question 13
+// var string = prompt("Enter string")
+// var letter = prompt("Enter the letter to be counted")
+// function letterCount(string, letter) {
+//     var count = 0
+//     for (var i = 0 ; i < string.length ; i++) {
+//         if(string[i] == letter) {
+//             count += 1
+//         }
+//     }
+//     return count
+// }
+// var noOfAppereance = letterCount(string , letter)
+// document.write("Given String is => " + string)
+// document.write("<br> No. of " + letter + "(s) appeared in this string => " + noOfAppereance) 
+
+
+// Question 14
+// var radius = prompt("Enter Radius")
+// function calcCircumference(radius) {
+//     var circum = 2 * Math.PI * radius
+//     return circum
+// }
+// function calcArea(radius) {
+//     var area = Math.PI * radius**2
+//     return area
+// }
+// var circumference = calcCircumference(radius)
+// var area = calcArea(radius)
+// document.write("The circumference is " + circumference)
+// document.write("<br> The area is " + area)
