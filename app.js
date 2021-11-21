@@ -556,6 +556,7 @@
 // else {
 //     alert("It is a number")
 // }
+//
 // // 2nd Method
 // var char = prompt("Enter any character")
 // if(char.charCodeAt() >= 65 && char.charCodeAt() <= 90){
@@ -806,6 +807,15 @@
 // document.write("<br>")
 // for (var a = 0; a < arr3.length; a++) {
 //     document.write(arr3[a])
+// }
+//
+// // 2nd Method
+// var mulDiArr = [[0, 1, 2, 3], [1, 0, 1, 2], [2, 1, 0, 1]]
+// for (var i = 0 ; i < mulDiArr.length ; i++) {
+//     for (var j = 0 ; j < mulDiArr[i].length ; j++) {
+//         document.write(mulDiArr[i][j] + " ")
+//     }
+//     document.write("<br>")
 // }
 
 
