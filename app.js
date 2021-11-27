@@ -1746,6 +1746,84 @@
 // calcCenti()
 
 
+// Question 09
+// var hours = +prompt("Hours worked by an employee: ")
+// var payPerHour = 12
+// function overtimePay() {
+//     if(hours > 40) {
+//         var overtimeWork = hours - 40
+//         var overtimePay = overtimeWork * payPerHour
+//         return overtimePay
+//     }
+//     else {
+//         return "There's no overtime pay"
+//     }
+// }
+// var result = overtimePay()
+// document.write("Employee has worked " + hours + " hours.")
+// document.write("<br> So, " + result )
+
+
+// Question 10
+// var amount = +prompt("Enter amount to withdraw!!")
+// var hundred = 100
+// var fifty = 50
+// var ten = 10
+// var hundredCounter = 0
+// var fiftyCounter = 0
+// var tenCounter = 0
+// function withdrawer() {
+//     while (amount >= hundred) {
+//         amount -= hundred
+//         hundredCounter++
+//     }  
+//     while (amount >= fifty) {
+//         amount -= fifty
+//         fiftyCounter++
+//     }
+//     while (amount >= ten) {
+//         amount -= ten
+//         tenCounter++
+//     }
+//     document.write("You will have " + hundredCounter + " hundred notes " + fiftyCounter + " fifty notes " + tenCounter + " ten notes.")
+// }
+// withdrawer()
+//
+// // 2nd Method
+// var amount = +prompt("Enter amount to withdraw !!")
+// var hundreds = 0;
+// var fifties = 0;
+// var tens = 0;
+// function withdraw() {
+//     function calcHundred() {
+//         for (var i = 0; amount >= 100; i++) {
+//             amount = amount - 100
+//             hundreds++
+//         }
+//         return hundreds
+//     }
+//     hundreds = calcHundred() 
+//     function calcFifty() {
+//         for (var j = 0 ; amount >= 50 ; j++) {
+//             amount = amount - 50
+//             fifties++
+//         }
+//         return fifties
+//     }
+//     fifties = calcFifty()
+//     function calcTen() {
+//         for (var k = 0 ; amount >= 10 ; k++) {
+//             amount = amount - 10
+//             tens++
+//         }
+//         return tens
+//     }
+//     tens = calcTen()
+//     document.write("You will have " + hundreds + " hundred notes " + fifties + " fifty notes " + tens + " ten notes.")
+// }
+// withdraw()
+
+
 
 // Chapter 43 - 48
 
