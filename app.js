@@ -1840,9 +1840,14 @@
 
 
 // Question 03
+// // 1st Method
 // function deleteRow(element) {
 //     var i = element.parentNode.parentNode.rowIndex;
 //     document.getElementById("myTable").deleteRow(i);
+// }
+// // 2nd Method
+// function deleteRow(element) {
+//     element.parentNode.parentNode.remove();
 // }
 
 
