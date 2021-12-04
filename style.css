@@ -3,9 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.title {
-    text-align: center;
+.top {
+    margin-top: 50px;
+}
+.Container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.Container span {
+    width: 147px;
+    display: flex;
+    justify-content: center;
+}
+.blue {
     color: royalblue;
-    padding: 20px 0px;
+    margin-top: 10px;
+}
+table{
+    border: 2px solid royalblue;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid royalblue;
+}
+img {
+    margin: 10px, 0, 0, 10px;
+    width: 500px;
+}
+fieldset {
+    width: 30%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: 40%;
+    height: 40px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+button {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.hideForm {
+    display: none;
 }
