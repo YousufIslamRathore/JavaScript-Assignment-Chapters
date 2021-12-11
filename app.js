@@ -1961,3 +1961,108 @@
 // var lastNameP = document.getElementById("lastName").previousElementSibling
 // var emailParent = document.getElementById("email").parentNode
 // var emailNodeType = document.getElementById("email").nodeType
+
+
+
+// Objects' Objects
+
+// Question 01
+// var itemsArray = [
+//     {
+//         name: "juice",
+//         price: "50",
+//         quantity: "3"
+//     },
+//     {
+//         name: "cookie",
+//         price: "30",
+//         quantity: "9"
+//     },
+//     {
+//         name: "shirt",
+//         price: "880",
+//         quantity: "1"
+//     },
+//     {
+//         name: "pen",
+//         price: "100",
+//         quantity: "2"
+//     }
+// ]
+// var totalItemPrice;
+// var allTotalPrice = 0;
+// for (var i = 0; i < itemsArray.length; i++) {
+//     totalItemPrice = +itemsArray[i].price * +itemsArray[i].quantity
+//     document.write("Total Price of item " + itemsArray[i].name + " is " + totalItemPrice + "<br>")
+//     allTotalPrice += totalItemPrice
+// }
+// document.write("<br> Total of all prices is : " + allTotalPrice)
+
+
+// Question 02
+// var obj1 = {
+//     name : "Yousuf",
+//     email : "rathoreislam@gmail.com",
+//     password : "hehehe",
+//     age : 20,
+//     gender : "M",
+//     city : "Karachi",
+//     country : "Pakistan"
+// }
+// document.write("age exists in object: ", "age" in obj1 , "<br>")
+// document.write("country exists in object: ", "country" in obj1 , "<br>")
+// document.write("firstName exists in object: ", "firstName" in obj1 , "<br>")
+// document.write("lastName exists in object: ", "lastName" in obj1 , "<br>")
+
+
+// Question 03 
+// function Data(name, age, gender) {
+//     this.name = name
+//     this.age = age
+//     this.gender = gender
+//     this.getName = function() {
+//         return this.name
+//     }
+//     this.getAge = function() {
+//         return this.age
+//     }
+//     this.getGender = function() {
+//         return this.gender
+//     }
+// }
+// var std1 = new Data("Yousuf", 21, "M")
+// var std2 = new Data("Mariumm", 21, "F")
+// document.write("Name of Student1: ",std1.getName(),"<br>")
+// document.write("Age of Student1: ",std1.getAge(),"<br>")
+// document.write("Gender of Student1: ",std1.getGender(),"<br><br>")
+// document.write("Name of Student2: ",std2.getName(),"<br>")
+// document.write("Age of Student2: ",std2.getAge(),"<br>")
+// document.write("Gender of Student2: ",std2.getGender(),"<br>")
+
+
+// Question 04
+// function Check() {  
+//     this.name = prompt("Enter Name")
+//     this.gender = prompt(`<p>Please select your Gender:</p>
+//       <input type="radio" id="male" name="gender" value="male">
+//       <label for="male">Male</label><br>
+//       <input type="radio" id="female" name="gender" value="female">
+//       <label for="female">Female</label><br>`)
+//     this.address = prompt("Enter Address")
+//     this.education = `<label for="education">Choose your education:</label>
+//     <select name="education" id="education">
+//         <option value="grad">Graduate</option>
+//         <option value="undergrad">Undergraduate</option>
+//         <option value="inter">Intermediate</option>
+//         <option value="matric">Matriculation</option>
+//     </select>`
+//     this.profession = `<label for="profession">Choose your profession:</label>
+//     <select name="profession" id="profession">
+//         <option value="teacher">Teacher</option>
+//         <option value="doctor">Doctor</option>
+//         <option value="privateService">Private Service</option>
+//         <option value="govtService">Govt. Service</option>
+//     </select>`
+// }
+// var first = new Check()
+// var second = new Check()
